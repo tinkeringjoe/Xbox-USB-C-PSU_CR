@@ -5,9 +5,24 @@ This fork is for the following:
 3) Move components from back to front to simplify manufacturing.
 4) Change from solder pads to through holes for power cabling; add enough holes for all XBOX revisions cabling.
 
-Stretch
-1) Simplify routing to manufacture as a 2 layer board (This will probably not be possible without major schematic/parts change)
+Goals 1-4 completed. Additionally changed the following.
+Inductor/output capacitors for all power rails have been updated per datasheet equations to minimize ripple.
+Cost reduced components (BOM will remain hidden until testing is completed.)
 
+
+This board supports the following power on the rails with an expected ripple of around 1%
+5V - 15A
+12V - 1.5A
+3.3V - 5A
+3.3VSB - 700mA
+
+5 turn-key boards have been ordered to test. The following testing is to occur before even touching an XBOX.
+
+
+1.) Power supply ripple is to be measured under the following conditions (1%, 25%, 50%, 100% of peak load). Should not exeed 5%.
+2.) Load removal testing; 100% to 0% load. Should not exceed 10% of voltage rail.
+
+Once these requirements have been satisfied real-hardware testing can occur.
 
 # Xbox-USB-C-PSU
 The first ever USB C PSU for the original Xbox
