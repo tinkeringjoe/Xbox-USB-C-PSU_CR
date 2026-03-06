@@ -5,4 +5,5 @@
   (lib (name "XboxUSB-C")(type "KiCad")(uri "C:/Xbox-Charge/XboxUSC-C/XboxUSC-C-backups/XboxUSC-C-2024-04-08_211434/XboxUSB-C.kicad_sym")(options "")(descr ""))
   (lib (name "TPS25750D")(type "KiCad")(uri "C:/100W-Charging-PCB/TPS25750D.kicad_sym")(options "")(descr ""))
   (lib (name "BQ25713")(type "KiCad")(uri "C:/100W-Charging-PCB/BQ25713.kicad_sym")(options "")(descr ""))
+  (lib (name "Xbox_power_supply")(type "KiCad")(uri "${KIPRJMOD}/Xbox_power_supply.kicad_sym")(options "")(descr ""))
 )

@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 3.0,
-          "width": 3.0
+          "height": 0.95,
+          "width": 0.9
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -59,7 +59,84 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|44937900|67512301|8cdf8f6a-9203-4617-b8de-78f33e05d383|3df3356d-293e-4889-971f-9a1ff5008c10",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|140850000|61038900|724ef6d9-378d-47fb-8c36-76bcc7a84416|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|177215000|77375000|85254b13-7b84-4d5e-80dc-38ccba88ff02|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|44950600|67525001|bb50510f-bedf-48d2-91ef-939b6d3b7a78|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|109396000|62109000|908736b1-06a2-4933-b7c4-7f4d330f73c5|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|116200000|62450000|2f10c6d5-4b8d-4a74-95b7-d08f935a47f1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|123091000|74926000|a5c9686c-bbdc-4d44-a616-177c42604ef9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|130599999|85250000|4ab189d7-c8fc-4302-898b-47a9b888e3b5|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|173170000|80818370|85254b13-7b84-4d5e-80dc-38ccba88ff02|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|73006001|61108999|426738cf-2152-43f7-94af-531ca6732ff7|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|86978000|75398000|3b4d6791-4c11-43f0-82dd-051e062798b5|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|92500000|85600000|77597c4a-edbf-4fdb-88c5-6766bd4c0c5d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|29720000|68900000|04ee0174-05e2-4c5b-987b-dd6cbc306a3b|32bd8999-31cf-4af5-bae9-5039b5ea2cd0",
+          ""
+        ],
+        [
+          "silk_edge_clearance|29720000|77840000|04ee0174-05e2-4c5b-987b-dd6cbc306a3b|36cca2fc-f061-4449-a809-790ccc54d840",
+          ""
+        ],
+        [
+          "silk_edge_clearance|29720000|80000000|04ee0174-05e2-4c5b-987b-dd6cbc306a3b|185dd7e5-f30c-4e1c-9f08-543a42bd4860",
+          ""
+        ],
+        [
+          "silk_edge_clearance|29720000|81220000|04ee0174-05e2-4c5b-987b-dd6cbc306a3b|974917ba-3406-4237-9ce3-2df1f5bf908b",
+          ""
+        ],
+        [
+          "silk_edge_clearance|30242197|91440000|074c626d-dd79-4e3f-815a-d435be5365bb|7e6ab7b9-dc0f-4478-8d1f-e4d3e1a7b303",
+          ""
+        ],
+        [
+          "silk_overlap|136856219|64245649|4fc46fc4-82ce-4d67-9cdb-82c8aa233243|b9295c28-071f-44e8-97d9-556cd4e1d0fa",
+          ""
+        ],
+        [
+          "solder_mask_bridge|44937900|67512301|8cdf8f6a-9203-4617-b8de-78f33e05d383|3df3356d-293e-4889-971f-9a1ff5008c10",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -109,6 +186,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -194,9 +272,11 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
         0.2,
-        0.5
+        0.3,
+        0.5,
+        0.7,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -230,8 +310,12 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.55,
+          "diameter": 0.7,
           "drill": 0.3
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.5
         }
       ],
       "zones_allow_external_fillets": false,
@@ -470,6 +554,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -527,7 +612,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "Xbox-PSU-009_012.csv",
+    "bom_export_filename": "Xbox-PMS.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -586,6 +671,12 @@
         },
         {
           "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
@@ -601,12 +692,6 @@
           "label": "MANUFACTURER_NAME",
           "name": "MANUFACTURER_NAME",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": true
         },
         {
           "group_by": false,
@@ -637,13 +722,37 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
+      "sort_asc": false,
       "sort_field": "MPN"
     },
     "connection_grid_size": 50.0,
