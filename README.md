@@ -1,3 +1,14 @@
+This fork is for the following:
+
+1) Reducing cost by using a cheap single IC that requires barely any supporting passives for USB-PD negotiating.
+2) Updating power good signal to be an AND of the 4 power rails rather than a wired OR for power good.
+3) Move components from back to front to simplify manufacturing.
+4) Change from solder pads to through holes for power cabling; add enough holes for all XBOX revisions cabling.
+
+Stretch
+1) Simplify routing to manufacture as a 2 layer board (This will probably not be possible without major schematic/parts change)
+
+
 # Xbox-USB-C-PSU
 The first ever USB C PSU for the original Xbox
 
